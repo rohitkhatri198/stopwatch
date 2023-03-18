@@ -40,7 +40,7 @@ span {
 .buttons {
   padding: 1rem 1vw;
   display: inline-flex;
-  gap: 2vw;
+  gap: 2.2vw;
 }
 
 button {
@@ -65,7 +65,7 @@ button:hover {
 }
 
 @media screen and (max-width:767px){
-  .button {
+  button {
     padding: 1rem;
   }
 }

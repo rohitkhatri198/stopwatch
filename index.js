@@ -8,41 +8,35 @@ window.onload = function () {
   var reset = document.getElementById("buttonReset");
   var Interval;
 
-  
-  start.onclick = function() {
-    
+  start.onclick = function () {
     clearInterval(Interval);
-     Interval = setInterval(startTimer,20);
-  }
-  
-    stop.onclick = function() {
-       clearInterval(Interval);
-  }
-  
+    Interval = setInterval(startTimer, 20);
+  };
 
-  reset.onclick = function() {
-     clearInterval(Interval);
-     console.log("hello")
+  stop.onclick = function () {
+    clearInterval(Interval);
+  };
+
+  reset.onclick = function () {
+    clearInterval(Interval);
+    console.log("hello");
     tens = "00";
-  	seconds = "00";
+    seconds = "00";
     appendsTens.innerHTML = tens;
-  	appendsSeconds.innerHTML = seconds;
-  }
-  
-   
-  
-  function startTimer () {
-    tens++; 
-    
-    if(tens <= 9){
+    appendsSeconds.innerHTML = seconds;
+  };
+
+  function startTimer() {
+    tens++;
+
+    if (tens <= 9) {
       appendsTens.innerHTML = "0" + tens;
     }
-    
-    if (tens > 9){
+
+    if (tens > 9) {
       appendsTens.innerHTML = tens;
-      
-    } 
-    
+    }
+
     if (tens > 99) {
       console.log("seconds");
       seconds++;
@@ -50,13 +44,9 @@ window.onload = function () {
       tens = 0;
       appendsTens.innerHTML = "0" + 0;
     }
-    
-    if (seconds > 9){
+
+    if (seconds > 9) {
       appendsSeconds.innerHTML = seconds;
     }
-  
   }
-  
-
-
 };
