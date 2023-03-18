@@ -1,3 +1,8 @@
+@font-face{
+  font-family: "satoshi";
+  src: url(/fonts/Satoshi-Bold.woff2);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -35,6 +40,7 @@ span {
   color: black;
   font-size: 4vw;
   /* font-family: "" */
+  font-family: "satoshi";
   user-select: none;
 }
 .buttons {
@@ -53,6 +59,8 @@ button {
   text-transform: capitalize;
   font-family: Arial, Helvetica, sans-serif;
   user-select: none;
+  font-family: "satoshi";
+
 }
 button:hover {
   scale: 1.2;
